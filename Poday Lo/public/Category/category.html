@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/PodayLo-Logo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Henny+Penny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Henny+Penny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Vidaloka&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="../main.js"></script>
+    <title>Category</title>
+    
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="header-text" onclick="gotoHome()">
+                Podaylo.pk
+            </div>
+            <div class="cart">
+              <a href="../Cart/cart.html"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="nav-div">
+          <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            
+              <ul class="">
+                  <li class="">
+                      <a onclick="renderPage('plants')">Plants</a>
+                  </li>
+                  <span>/</span>
+                  <li class="">
+                      <a onclick="renderPage('seeds')">Seeds</a>
+                  </li>
+                  <span>/</span>
+                  <li class="">
+                      <a onclick="renderPage('snf')">Soil & Fertilizers</a>
+                  </li>
+                  <span>/</span>
+                  <li class="">
+                      <a onclick="renderPage('pots')">Pots</a>
+                  </li>
+                  <span>/</span>
+                  <li class="">
+                      <a onclick="renderPage('gt')">Gardening Tools</a>
+                  </li>
+                  <span>/</span>
+                  <li class="">
+                      <a href="../Care&Protection/candp.html">Care & Protection</a>
+                  </li>
+                  <span>/</span>
+                  <li class="">
+                      <a href="../Our Services/services.html">Our Services</a>
+                  </li>
+                
+              </ul>
+            </nav>
+        </div>
+    <div id="card-heading-s">New Arrivals</div>
+    <div id="cards-container-s"></div>
+</div>
+
+
+
+
+
+    
+  
+</body>
+<footer>
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Tikka Company</p>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAV3Jd4hM-6H6PYKWtAj0UAiaw5-ftCoIU",
+    authDomain: "podaylo-db.firebaseapp.com",
+    databaseURL: "https://podaylo-db.firebaseio.com",
+    projectId: "podaylo-db",
+    storageBucket: "podaylo-db.appspot.com",
+    messagingSenderId: "414067703773",
+    appId: "1:414067703773:web:4ad1b4eb5f343fbce5c034",
+    measurementId: "G-6E3WND78CZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+
+
+
+
+
+<script src="category.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</html>

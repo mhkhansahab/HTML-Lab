@@ -1,0 +1,66 @@
+#card-heading-s{
+    font-family: 'Henny Penny', cursive !important;
+    text-align: center;
+    font-size: 300%;
+    color: green;
+    margin-top: 2%;
+}
+.card-s{
+    width: 16%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 3px 3px lightgray;
+    margin: 1% auto !important;
+    
+}
+.card-image-s{
+    height: 160px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    margin: 0 auto;
+}
+#cards-container-s{
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-btn-s{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    font-weight: lighter;
+    margin: 2px;
+    width: 80%;
+    height: 12%;
+}
+.card-name-s{
+    display: flex;
+    font-size: 60%;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .card-s{
+        width: 19%;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .card-s{
+        width: 24%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .card-s{
+        width: 29%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .card-s{
+        width: 48%;
+        height: 15% !important;
+    }
+  }

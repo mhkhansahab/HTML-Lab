@@ -1,0 +1,21 @@
+.headingDiv{
+    text-align: center;
+    font-size: 60px;
+    color: green;
+}
+.formDiv{
+    text-align: center;
+}
+
+fieldset{
+    padding: 20px;
+    border: 5px solid;
+    color: green;
+    border-radius: 10px;
+
+    
+}
+legend{
+    font-size: larger;
+    margin: 10px 20px;
+}

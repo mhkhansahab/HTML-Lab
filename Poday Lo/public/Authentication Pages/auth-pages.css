@@ -1,0 +1,25 @@
+.form-block{
+    margin: 0 auto;
+    width: 800px;
+}
+.fieldset-block{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.fields{
+    margin: 0 auto;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: large;
+}
+.login-button{
+    margin: 0 auto;
+    height: 60px;
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: goldenrod;
+}

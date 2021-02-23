@@ -1,0 +1,162 @@
+#title{
+    font-family: 'Montserrat';
+    background-color: black;
+    height: 100px;
+    color: blanchedalmond;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+    
+}
+#line{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-style: oblique;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+#image{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 100%;
+}
+.grid-container1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.grid-container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.grid_item{
+    font-family: 'Montserrat';
+    background-color: black;
+    text-align: center;
+    height: 60px;
+    border-radius: 20px;
+}
+.item{
+    color: blanchedalmond;
+}
+h3{
+  font-family: 'Montserrat';
+}
+
+
+
+/* ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    background-color: black;
+    height: 60px;
+    border-radius: 20px;
+  }
+  
+  li {
+    text-align: center;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  li.dropdown {
+    
+    display: inline;
+  }
+   
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    text-align: left;
+    color: blanchedalmond;
+  }
+  
+  .dropdown-content a:hover {background-color:grey;}
+  
+  .dropdown:hover .dropdown-content {
+    display: flow-root;
+    border-radius: 20px;
+  } */
+
+
+
+
+
+
+
+
+
+
+  /* Style The Dropdown Button */
+.dropbtn {
+    font-family: 'Montserrat';
+    background-color: black;
+    text-align: center;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: blanchedalmond;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:grey}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content, .dropbtn {
+    display: block;
+}

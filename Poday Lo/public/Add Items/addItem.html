@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="addItem.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="mainDiv">
+    <div class="headingDiv">Add Item</div>
+    <div class="formDiv">
+        <form action="">
+            <fieldset>
+            <legend>Information Panel</legend>
+                
+                <label for="fname">Name<input type="text" name="fname" id="fname"></label>
+                <label for="url">URL<input type="text" name="url" id="url"></label>
+                <label for="price">Price<input type="text" name="price" id="price"></label>
+                
+                <label for="opt">Choose a Category: <select name="opt" id="opt">
+                  <option value="" selected= "selected" disabled= "true">None</option>
+                  <option value="plants">Plants</option>
+                  <option value="seeds">Seeds</option>
+                  <option value="pots">Pots</option>
+                  <option value="gtools">Gardening Tools</option>
+                  <option value="snf">Soil & Fertilizers</option>
+                </select>
+                </label>
+              <span><button type="button" id="myButton">Add</button></span>
+            
+            </fieldset>
+        </form>
+        
+    </div>
+</div>
+
+
+</body>
+<footer>
+  <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Tikka Company</p>
+</footer>
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+     <script>
+       // Your web app's Firebase configuration
+       var firebaseConfig = {
+         apiKey: "AIzaSyAV3Jd4hM-6H6PYKWtAj0UAiaw5-ftCoIU",
+         authDomain: "podaylo-db.firebaseapp.com",
+         databaseURL: "https://podaylo-db.firebaseio.com",
+         projectId: "podaylo-db",
+         storageBucket: "podaylo-db.appspot.com",
+         messagingSenderId: "414067703773",
+         appId: "1:414067703773:web:3b98a63a9853fbffe5c034",
+         measurementId: "G-VM6G5ZGT9K"
+       };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       firebase.analytics();
+     </script>
+<script src="addItem.js"></script>     
+
+</html>

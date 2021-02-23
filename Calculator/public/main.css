@@ -1,0 +1,38 @@
+*{
+    font-family: 'MuseoModerno', cursive;
+}
+h1{
+    text-align: center;
+    height: 10%;
+    background-color: gray;
+}
+.main{
+    margin: 50px;
+    height: 100%;
+}
+.result{
+    height: 20%;
+}
+#clear-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.all{
+    background-color: antiquewhite;
+    height: 60%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: cadetblue;
+}
+.col{
+    text-align: center;
+    padding-top: 20px;
+    background-color: silver;
+    height: 50px;
+    width: 200px;
+    border-color: black;
+    border: 10px;
+}

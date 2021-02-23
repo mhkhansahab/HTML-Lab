@@ -1,0 +1,14 @@
+#data-div{
+    color: green;
+    border: 2px dotted;
+    margin: 5px;
+}
+h4{
+    margin: 20px;
+    text-align: justify;
+}
+h2{
+    margin-top: 20px !important;
+    margin-left: 8px;
+    text-decoration: underline;
+}

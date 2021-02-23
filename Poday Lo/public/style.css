@@ -1,0 +1,336 @@
+*{
+    font-family: 'Vidaloka', serif;
+
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    background-color: white !important;
+}
+.header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: green;
+}
+.header-text{
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    font-size: 56px;
+    color: white;
+    text-align: center;
+    font-family: 'Henny Penny', cursive !important;
+    cursor: pointer;
+    
+}
+
+.fa-shopping-cart{
+    position: relative;
+    float: right;
+    margin: 20px 10px;
+    font-size: 40px !important;
+    color: white;
+}
+.checkbtn{
+    font-size: 25px;
+    color: green;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.nav-div{
+    margin-top: 2%;
+    position: relative;
+    height: 10vh;
+}
+ul{
+    list-style-type: none;
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+nav ul li a{
+    border-radius: 3px;
+    text-decoration-line: none !important;
+    margin: 0 10px;
+    color : green;
+    cursor: pointer;
+}
+a:hover{
+    color: white !important;
+    background-color: green !important;
+    transition: .5s;
+    
+}
+.carousel-caption{
+    background-color: green !important;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.card{
+    width: 30%;
+    height: auto;
+    box-shadow: 0.5px 2px 2px 0.5px lightgrey;
+}
+
+.card-p{
+    font-weight: 100px !important;
+    letter-spacing: 0.1em;
+    color: green;
+    text-align: center;
+}
+small{
+    font-weight: 100px;
+    letter-spacing: 0.2em;
+    color: green;
+    text-align: center;
+}
+footer{
+    background-color: green;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+footer, .fa-copyright{
+    font-size: 20px !important;
+    color: white !important;
+    justify-content: center;
+}
+.fa-copyright{
+    margin-right: 10px;
+}
+
+
+@media (max-width : 1024px){
+    .checkbtn{
+        display: block;
+    }
+    #check{
+        display: none;
+    }
+   
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 24%;
+        left: -100%;
+        padding: 0%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+        background-color: white;
+        z-index: 12;
+
+    }
+    nav ul li{
+        display: block;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    ul>span{
+        display: none
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+@media (max-width : 768px){
+    .nav-div{
+        margin-top: 0%;
+    }
+    .checkbtn{
+        display: block;
+        float: none;
+        margin: 0px;
+        text-align: center;
+        
+    }
+    #check{
+        display: none;
+    }
+   
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 23%;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+        background-color: white;
+        z-index: 6;
+
+    }
+    nav ul li{
+        display: block;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    ul>span{
+        display: none
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+@media (max-width : 648px){
+    .card{
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    .checkbtn{
+        display: block;
+        float: none;
+        margin: 0px;
+        text-align: center;
+        
+    }
+    #check{
+        display: none;
+    }
+   
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 21%;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+        background-color: white;
+        z-index: 6;
+
+    }
+    nav ul li{
+        display: block;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    ul>span{
+        display: none
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+@media (max-width : 560px){
+    
+    .checkbtn{
+        display: block;
+        float: none;
+        margin: 0px;
+        text-align: center;
+        
+    }
+    #check{
+        display: none;
+    }
+   
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 20%;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+        background-color: white;
+        z-index: 6;
+
+    }
+    nav ul li{
+        display: block;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    ul>span{
+        display: none
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+@media (max-width : 480px){
+    .card{
+        width: 80%;
+        margin-top: 10px;
+    }
+   
+    .checkbtn{
+        display: block;
+        float: none;
+        margin: 0px;
+        text-align: center;
+        
+    }
+    #check{
+        display: none;
+    }
+   
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 21%;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all .5s;
+        background-color: white;
+        z-index: 6;
+
+    }
+    nav ul li{
+        display: block;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    ul>span{
+        display: none
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+

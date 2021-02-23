@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil & Fertilizers</title>
+    <link rel="shortcut icon" href="Images/PodayLo-Logo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="../main.js"></script>
+
+</head>
+<body>
+    <div>
+    <div class="header">
+        <div class="header-text">
+            Aao ji Poday Lo!
+        </div>
+        <div class="cart">
+            <a href="../Cart/cart.html"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <br>
+    <div>
+      <nav class="navbar navbar-expand-lg">
+        <img src="../Images/leaf1.svg" class="leaf-logo" alt="" onclick="gotoHome()">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="../Plants/plants.html">Plants</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Seeds/seeds.html">Seeds</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Soil & Fertilizers<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Pots/pots.html">Pots</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Gardening Tools/gtools.html">Gardening Tools</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Care&Protection/candp.html">Care & Protection</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Our Services/services.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../About Us/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Add Items/addItem.html">Add Items</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="card-heading-s"><i>New Arrivals</i></div>
+    <div id="cards-container-s">
+      
+    </div>
+  
+</div>
+
+</body>
+
+<footer>
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Tikka Company</p>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+     <script>
+       // Your web app's Firebase configuration
+       var firebaseConfig = {
+         apiKey: "AIzaSyAV3Jd4hM-6H6PYKWtAj0UAiaw5-ftCoIU",
+         authDomain: "podaylo-db.firebaseapp.com",
+         databaseURL: "https://podaylo-db.firebaseio.com",
+         projectId: "podaylo-db",
+         storageBucket: "podaylo-db.appspot.com",
+         messagingSenderId: "414067703773",
+         appId: "1:414067703773:web:3b98a63a9853fbffe5c034",
+         measurementId: "G-VM6G5ZGT9K"
+       };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       firebase.analytics();
+     </script>
+     
+<script src="sandf.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</html>

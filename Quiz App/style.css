@@ -1,0 +1,41 @@
+html, body{
+    height: 100%;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.abc{
+    margin-top: 50px;
+}
+.card-main{
+    border: 5px solid lightgray;
+    border-radius: 5px 50px 5px 50px !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    border-radius: 50%;
+}
+.card-container{
+    height: 200px;
+    width: 150px;
+    border: 2px solid;
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container{
+        height: 90px;
+        width: 100%;
+        flex-direction: row;
+        margin: 0 30px !important;
+    }        
+  }
+  

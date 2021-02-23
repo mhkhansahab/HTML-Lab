@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Database</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div id="div1">
+        Database App
+    </div>
+    <br>
+    <div id="div2">
+        <form action="" id="info-form">
+            <h1>Information</h1>
+            <label for="username">Name</label>
+            <input type="text" name="username" id="uname" placeholder="Name">
+            <br>
+            <label for="city">City</label>
+            <input type="text" name="city" id="ucity" placeholder="City">
+            <br>
+            <button>Add</button>
+            
+        </form>
+        <ul id="userList">
+        </ul>
+    </div>
+
+
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDK1y9q4Dx9ihCf7UP-WmYgeoGrz15r8X8",
+    authDomain: "firbase-web24.firebaseapp.com",
+    databaseURL: "https://firbase-web24.firebaseio.com",
+    projectId: "firbase-web24",
+    storageBucket: "firbase-web24.appspot.com",
+    messagingSenderId: "1010916333365",
+    appId: "1:1010916333365:web:cee463bb065d37cb2a5e7c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+ <script src="main.js"></script>
+</body>
+</html>

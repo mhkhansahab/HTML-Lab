@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>Calculator</h1>
+        </div>
+    <div class="result" id = "manipulate">0</div>
+    <hr>
+    <div class="all">
+        <div class="row">
+            <div id="clear-button" class="col" onclick = nowClear()>Clear</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick = "check(7)">7</div>
+            <div class="col" onclick = "check(8)">8</div>
+            <div class="col" onclick = "check(9)">9</div>
+            <div class="col" onclick = "check('/')">/</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick = "check(4)">4</div>
+            <div class="col" onclick = "check(5)">5</div>
+            <div class="col" onclick = "check(6)">6</div>
+            <div class="col" onclick = "check('*')">*</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick = "check(1)">1</div>
+            <div class="col" onclick = "check(2)">2</div>
+            <div class="col" onclick = "check(3)">3</div>
+            <div class="col" onclick = "check('-')">-</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick = "check(0)">0</div>
+            <div class="col" onclick = "check('.')">.</div>
+            <div class="col" onclick = solve()>=</div>
+            <div class="col" onclick = "check('+')">+</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
